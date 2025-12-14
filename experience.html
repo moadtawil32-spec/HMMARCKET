@@ -1,18 +1,56 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="هذه صفحة تجريبية لتعلم meta">
-  <meta name="keywords" content="HTML, CSS, meta">
-  <meta name="author" content="Rro">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مثال على meta</title>
+  <meta charset="UTF-8" />
+  <title>دائرة كهربائية بسيطة</title>
+  <style>
+    body {
+      background: #f9fafb;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      text-align: center;
+    }
+    .circuit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 60px;
+    }
+    .box {
+      background: #e0e7ff;
+      border: 2px solid #6366f1;
+      border-radius: 10px;
+      padding: 20px 30px;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .arrow {
+      font-size: 30px;
+      color: #4b5563;
+    }
+    .info {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #374151;
+    }
+  </style>
 </head>
 <body>
-  <h1>مرحباً بك!</h1>
+  <h1>تمثيل بصري لدائرة كهربائية</h1>
+
+  <div class="circuit">
+    <div class="box">🔋 مصدر التيار</div>
+    <div class="arrow">➡️</div>
+    <div class="box">🌀 مقاومة<br>7.5 Ω</div>
+    <div class="arrow">➡️</div>
+    <div class="box">💡 تيار<br>1.65 A</div>
+  </div>
+
+  <div class="info">
+    العلاقة: <strong>I = V / R</strong> &nbsp; ← &nbsp; التيار يتأثر بالمقاومة والجهد
+  </div>
 </body>
 </html>
-
-
-
